@@ -6,7 +6,7 @@ last_name = 'Cole'
 message = f'welcome {first_name} {last_name} to the arena!'
 print(message)
 
-# also
+# also f string
 
 message_other_way = 'welcome {0} {1} to the arena'.format(first_name, last_name)
 print(message_other_way)
