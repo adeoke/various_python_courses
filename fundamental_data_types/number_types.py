@@ -17,3 +17,10 @@ print(type(2 - 4))
 
 print(type(2 / 4))
 print(type(2 % 4))
+
+# The following is a type float
+print(9.9 + 1.1)
+
+# non negative number
+print(abs(-20))
+
