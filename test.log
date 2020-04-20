@@ -1,0 +1,16 @@
+WARNING:root:Add: 3 + 4 = 7
+WARNING:root:subtract: 9 - 11 = -2
+WARNING:root:multiply: 3 * 9 = 27
+WARNING:root:divide: 10 / 2 = 5.0
+WARNING:root:Add: 90 + 7 = 97
+WARNING:root:subtract: 9 - 11 = -2
+WARNING:root:multiply: 90 * 9 = 810
+WARNING:root:divide: 10 / 2 = 5.0
+DEBUG:root:Add: 90 + 7 = 97
+DEBUG:root:subtract: 9 - 11 = -2
+DEBUG:root:multiply: 90 * 9 = 810
+DEBUG:root:divide: 10 / 2 = 5.0
+2020-04-20 17:20:04,915:DEBUG:Add: 90 + 7 = 97
+2020-04-20 17:20:04,916:DEBUG:subtract: 9 - 11 = -2
+2020-04-20 17:20:04,916:DEBUG:multiply: 90 * 9 = 810
+2020-04-20 17:20:04,916:DEBUG:divide: 10 / 2 = 5.0
