@@ -1,3 +1,5 @@
+import sys
+
 DICTIONARY = {'zero': '0',
               'one': '1',
               'two': '2',
@@ -12,17 +14,14 @@ DICTIONARY = {'zero': '0',
 
 
 def convert(s):
-    int_x = -1
-
     try:
         number = ''
         for token in s:
             number += DICTIONARY[token]
-        int_x = int(number)
-        print(f'Conversion success x = {int_x}')
-    except (KeyError, TypeError):
-        print('conversion failed')
-    return int_x
+        return int(number)
+    except (KeyError, TypeError) as ex:
+        print(f'Conversion error: {ex!r}', file=sys.stderr)
+        return -1
 
 
 numbers_list = ['five', 'six', 'seven']
