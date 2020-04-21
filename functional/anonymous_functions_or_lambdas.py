@@ -57,12 +57,51 @@ print(sort_name(list_of_names))
 
 def wait_then_say_hello(seconds, func):
     time.sleep(seconds)
-    condition = callable(func) or sys.exit('non callable argument')
+    condition = callable(func) or False
     print(condition)
     func()
 
 
 wait_then_say_hello(5, lambda: expression_print('Adam'))
 
+
 # in the following case the method hello('Adam') will not work as an arg
-wait_then_say_hello(5, hello('Adam'))
+# wait_then_say_hello(5, hello('Adam'))
+
+
+# List comprehension
+def multiply_comprehension(li):
+    return [item * 2 for item in li]
+
+
+print(multiply_comprehension([1, 2, 3, 4]))
+
+LIST_0F_NUMBERS = [1, 2, 3, 4, 5, 6, 7]
+
+
+# Map function
+
+def multiply_by_2(number):
+    """ multiply number param by 2 """
+    return number * 2
+
+
+print(list(map(multiply_by_2, LIST_0F_NUMBERS)))
+
+
+# filter function
+
+def only_odd(number):
+    """return number that is odd"""
+    return number % 2 != 0
+
+
+print(list(filter(only_odd, LIST_0F_NUMBERS)))
+
+first_names = ['Michael', 'Curtis', 'Jim', 'Tom', 'Idris']
+last_names = ['Jordan', 'Jackson', 'Carey', 'Hanks', 'Elba']
+last_names_tuple = ('Jordan', 'Jackson', 'Carey', 'Hanks', 'Elba')
+
+print(list(zip(first_names, last_names)))
+print(list(zip(first_names, last_names_tuple)))
+
