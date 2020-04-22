@@ -26,4 +26,14 @@ def greater_than_50(item):
 
 print(list(filter(greater_than_50, scores)))
 
+
 # 4 Combine all of the numbers that are in a list on this file using reduce (my_numbers and scores). What is the total?
+def adder(int_x, int_y):
+    return int_x + int_y
+
+
+print(reduce(adder, scores + my_numbers))
+EXPECTED_TOTAL = 456
+
+print(reduce(adder, scores + my_numbers) == EXPECTED_TOTAL)
+

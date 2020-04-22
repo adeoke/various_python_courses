@@ -1,5 +1,5 @@
 import time
-import sys
+from functools import reduce
 
 
 # Lambdas will follow the format that you write lambda followed by the input
@@ -105,3 +105,13 @@ last_names_tuple = ('Jordan', 'Jackson', 'Carey', 'Hanks', 'Elba')
 print(list(zip(first_names, last_names)))
 print(list(zip(first_names, last_names_tuple)))
 
+list_items_less_than_10 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+add_result = ((((((((1 + 2) + 3) + 4) + 5) + 6) + 7) + 8) + 9)
+print(add_result)
+
+
+def adder(int_x, int_y):
+    return int_x + int_y
+
+
+print(reduce(adder, list_items_less_than_10, 0))
