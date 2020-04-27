@@ -139,7 +139,7 @@ linked_list.append_node(7)
 linked_list.append_node(9)
 linked_list.append_node(11)
 linked_list.append_node(13)
-linked_list.count
+print(linked_list.count)
 
 # print('data is ', linked_list.get_node().data)
 print('head is: ', linked_list.head.data)
