@@ -15,12 +15,20 @@ Lets write the algorithm.
 
 
 def morse_code(sequence):
-    print(ord('a'))
-    print(ord('z'))
+    number_list = [int(num) for num in sequence]
+    # print(number_list)
+    the_number = int(sequence)
+    number_list.append(the_number)
+    # print(number_list)
 
     chars_range = [chr(i) for i in range(ord('a'), ord('z') + 1)]
     new_dict = {value: char for char, value in enumerate(chars_range, 1)}
 
+    li = []
+    for num in number_list:
+        [li.append(k) for k in new_dict.keys() if new_dict[k] == num]
+
+    return li
 
 
-morse_code('')
+print(morse_code('12'))
